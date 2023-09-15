@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Prijsberekening</title>
+	<script>
+		function calculatePrice() {
+			// Lees de prijs en het aantal van de gebruiker in
+			var price = parseFloat(document.getElementById("price").value);
+			var quantity = parseInt(document.getElementById("quantity").value);
+			
+			// Bereken de totale prijs
+			var totalPrice = price * quantity;
+			
+			// Geef de totale prijs weer op de webpagina
+			document.getElementById("totalPrice").innerHTML = "De totale prijs is: " + totalPrice;
+		}
+	</script>
+</head>
+<body>
+	<h1>Prijsberekening</h1>
+	
+	<p>Voer de prijs van het product in:</p>
+	<input type="text" id="price">
+	
+	<p>Voer het aantal producten in dat u wilt kopen:</p>
+	<input type="text" id="quantity">
+	
+	<button onclick="calculatePrice()">Bereken prijs</button>
+	
+	<p id="totalPrice"></p>
+	<div><a href="img/tat.jpg" title="Image 01"><img src="img/tat.jpg" width="1000" alt=""></a></div>	
+</body>
+</html>
+In dit voorbeeld gebruiken we JavaScript om de functie

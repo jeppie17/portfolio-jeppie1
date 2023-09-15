@@ -1,0 +1,36 @@
+<html>
+	
+<body>
+	
+	<button id="addBtn">Optellen</button>
+<button id="subtractBtn">Aftrekken</button>
+<p id="result">Antwoord: </p>
+<script>
+// Get references to the buttons and the result paragraph
+var addBtn = document.getElementById("addBtn");
+var subtractBtn = document.getElementById("subtractBtn");
+var resultP = document.getElementById("result");
+
+// Set up event listeners for the buttons
+addBtn.addEventListener("click", function() {
+  var num1 = parseInt(prompt("Enter the first number:"));
+  var num2 = parseInt(prompt("Enter the second number:"));
+  var sum = num1 + num2;
+  resultP.textContent = "Result: " + sum;
+});
+
+subtractBtn.addEventListener("click", function() {
+  var num1 = parseInt(prompt("Enter the first number:"));
+  var num2 = parseInt(prompt("Enter the second number:"));
+  var difference = num1 - num2;
+  resultP.textContent = "Result: " + difference;
+});
+
+
+</script>
+
+<div><a href="img/tat.jpg" title="Image 01"><img src="img/tat.jpg" width="1000" alt=""></a></div>	
+</body>
+</html>
+
+  

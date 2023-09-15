@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Leeftijd Controle</title>
+</head>
+<body>
+	<label for="ageInput">Wat is uw leeftijd?</label>
+	<input type="number" id="ageInput" name="ageInput">
+	<button onclick="checkAge()">Controleer</button>
+
+	<script>
+		function checkAge() {
+			let ageInput = document.getElementById("ageInput").value;
+			if (ageInput >= 18) {
+				alert("U bent oud genoeg om te stemmen.");
+			} else {
+				alert("U bent nog niet oud genoeg om te stemmen.");
+			}
+		}</script>
+<div><a href="img/tat.jpg" title="Image 01"><img src="img/tat.jpg" width="1000" alt=""></a></div>	
+</body>
+</html>

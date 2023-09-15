@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Naam ingeven</title>
+</head>
+<body>
+  <script>
+    // Vraag de gebruiker om zijn of haar volledige naam in te voeren via een prompt()
+    var naam = prompt("Voer je volledige naam in:");
+
+    // Maak een nieuwe variabele greeting met de tekst "Hallo, " en de waarde van naam
+    var greeting = "Hallo, " + naam;
+
+    // Toon de waarde van de variabele greeting aan de gebruiker via document.write() of alert()
+    alert(greeting);
+
+    // Bepaal de lengte van de variabele naam en sla dit op in een variabele genaamd naamLengte
+    var naamLengte = naam.length;
+
+    // Toon de waarde van de variabele naamLengte aan de gebruiker via document.write() of alert()
+    alert("jouw naam heeft zoveel letters: " + naamLengte);
+
+    // Split de variabele naam in afzonderlijke voornaam en achternaam en sla deze op in afzonderlijke variabelen
+    var naamArray = naam.split(" ");
+    var voornaam = naamArray[0];
+    var achternaam = naamArray[1];
+
+    // Toon de afzonderlijke voornaam en achternaam aan de gebruiker via document.write() of alert()
+    alert("Je voornaam is: " + voornaam);
+   
+    alert("Je achternaam is: " + achternaam);
+ </script>
+<div><a href="img/tat.jpg" title="Image 01"><img src="img/tat.jpg" width="1000" alt=""></a></div>	
+</body>
+</html>

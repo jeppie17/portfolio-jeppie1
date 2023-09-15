@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Verhoog/Verlaag</title>
+</head>
+<body>
+
+	<h1>Verhoog/Verlaag</h1>
+
+	<p>Huidige waarde: <span id="waarde">0</span></p>
+
+	<button onclick="verhoog()">Verhoog</button>
+	<button onclick="verlaag()">Verlaag</button>
+
+	<script>
+		// Bijhouden van de waarde
+		var waarde = 0;
+
+		// Functie voor het verhogen van de waarde
+		function verhoog() {
+			waarde++;
+			document.getElementById("waarde").innerHTML = waarde;
+		}
+
+		// Functie voor het verlagen van de waarde
+		function verlaag() {
+			waarde--;
+			document.getElementById("waarde").innerHTML = waarde;
+		}
+	</script>
+<div><a href="img/tat.jpg" title="Image 01"><img src="img/tat.jpg" width="1000" alt=""></a></div>	
+</body>
+</html>

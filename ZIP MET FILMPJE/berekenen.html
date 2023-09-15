@@ -1,0 +1,37 @@
+
+<html>
+    <body>
+    <script>
+    // program for a simple calculator
+    
+    
+    
+    // take the operand input
+    const number1 = parseFloat(prompt('Vul eerste nummer in: '));
+    const number2 = parseFloat(prompt('Vul tweede nummer in: '));
+    
+    // take the operator input
+    const operator = prompt('Vul Operator in ( +, -, * of / ): ');
+    
+    let result;
+    
+    // using if...else if... else
+    if (operator == '+') {
+        result = number1 + number2;
+    }
+    else if (operator == '-') {
+        result = number1 - number2;
+    }
+    else if (operator == '*') {
+        result = number1 * number2;
+    }
+    else {
+        result = number1 / number2;
+    }
+    
+    // display the result
+    document.write(number1 + operator + number2 + "=" + result);
+    </script>
+    <div><a href="img/tat.jpg" title="Image 01"><img src="img/tat.jpg" width="1000" alt=""></a></div>	
+</body>
+</html>    
